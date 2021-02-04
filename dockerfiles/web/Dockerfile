@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y \
    iputils-ping \
    git
 RUN git clone https://github.com/en-siba/laravel-sample.git /var/www/public
-ADD default.conf /etc/nginx/conf.d/default.conf
+ADD ./dockerfiles/web/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
