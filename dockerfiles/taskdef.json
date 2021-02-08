@@ -11,6 +11,15 @@
         "protocol": "tcp"
         }
     ],
+    "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": null,
+        "options": {
+            "awslogs-group": "/ecs/testtask",
+            "awslogs-region": "ap-northeast-1",
+            "awslogs-stream-prefix": "ecs"
+        }
+    },
     "essential": true
     },
     {
@@ -23,6 +32,15 @@
             "protocol": "tcp"
             }
         ],
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "secretOptions": null,
+            "options": {
+                "awslogs-group": "/ecs/testtask",
+                "awslogs-region": "ap-northeast-1",
+                "awslogs-stream-prefix": "ecs"
+            }
+        },
         "essential": true
         }
 ],
